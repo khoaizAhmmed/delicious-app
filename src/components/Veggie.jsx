@@ -2,6 +2,7 @@ import { Splide, SplideSlide } from '@splidejs/react-splide';
 // eslint-disable-next-line import/no-unresolved
 import '@splidejs/react-splide/css';
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Veggie() {
@@ -34,15 +35,17 @@ function Veggie() {
                         arrows: false,
                         pagination: false,
                         drag: 'free',
-                        gap: '3rem',
+                        gap: '2rem',
                     }}
                 >
                     {veggie.map((recipe) => (
                         <SplideSlide key={recipe.id}>
                             <Card>
-                                <p>{recipe.title}</p>
-                                <img src={recipe.image} alt={recipe.title} />
-                                <Gradient />
+                                <Link to={`/Recipe/${recipe.id}`}>
+                                    <p>{recipe.title}</p>
+                                    <img src={recipe.image} alt={recipe.title} />
+                                    <Gradient />
+                                </Link>
                             </Card>
                         </SplideSlide>
                     ))}
@@ -53,7 +56,7 @@ function Veggie() {
 }
 
 const Wrapper = styled.div`
-    margin: 4rem 0;
+    margin: 2rem 0;
 `;
 const Card = styled.div`
     min-height: 15rem;
