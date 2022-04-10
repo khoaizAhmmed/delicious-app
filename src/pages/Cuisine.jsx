@@ -11,7 +11,6 @@ function Cuisine() {
             `https://api.spoonacular.com/recipes/complexSearch?number=9&tags=vegetarian&apiKey=${process.env.REACT_APP_API_KEY}&cuisine=${name}`
         );
         const recipes = await data.json();
-        console.log(recipes);
         setCuisine(recipes.results);
     };
 
