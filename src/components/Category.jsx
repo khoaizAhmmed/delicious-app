@@ -28,7 +28,7 @@ function Category() {
 const List = styled.div`
     display: flex;
     justify-content: center;
-    margin: 2rem 0rem;
+    margin: 1rem 0rem;
 `;
 const SLink = styled(NavLink)`
     display: flex;
@@ -38,8 +38,8 @@ const SLink = styled(NavLink)`
     border-radius: 50%;
     margin-right: 2rem;
     background: linear-gradient(35deg, #494949, #313131);
-    height: 6rem;
-    width: 6rem;
+    height: 5rem;
+    width: 5rem;
     cursor: pointer;
     transform: scale(0.7);
     h4 {
@@ -49,7 +49,7 @@ const SLink = styled(NavLink)`
     }
     svg {
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     &.active {
         background: linear-gradient(to right, #f27121, #e98057);
