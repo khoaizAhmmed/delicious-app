@@ -29,9 +29,9 @@ const FormStyle = styled.form`
     input {
         background: linear-gradient(35deg, #494949, #313131);
         border: none;
-        padding: 1rem 3rem;
+        padding: 0.5rem 2.5rem;
         color: white;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         border-radius: 1rem;
         outline: none;
         width: 100%;
