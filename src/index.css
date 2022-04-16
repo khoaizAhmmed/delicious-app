@@ -11,7 +11,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  margin: 0% 20%;
+  margin: 0% 15%;
 }
 
 code {
@@ -31,4 +31,5 @@ h3 {
 }
 a {
   color: rgb(56, 56, 56);
+  text-decoration: none;
 }
